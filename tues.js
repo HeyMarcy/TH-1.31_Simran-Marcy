@@ -34,6 +34,8 @@ function min(numbers) {
 
 
 
+
+
 //  Compute the average
 
 
@@ -49,3 +51,24 @@ function average(numbers) {
 
 
 
+function fizzBuzz(countTo) {
+  var arr = [];
+  
+  for ( var i=1; i<= countTo; i++) {
+    switch(true) {
+  case (i % 3 === 0) && (i % 5 === 0):
+        arr.push('fizzbuzz');
+        break;
+  case i % 5 === 0:
+        arr.push('buzz');
+        break;
+  case i % 3 === 0:
+        arr.push('fizz');
+        break;
+    default:
+        arr.push(i);
+    break;
+}
+    } return arr;                  
+  }
+fizzBuzz(16);
